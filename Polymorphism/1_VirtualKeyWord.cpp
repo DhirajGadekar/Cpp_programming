@@ -22,7 +22,7 @@ class Child1 : public Parent {
 			std::cout << "Child1 Constructor" << std::endl;
 		}
 
-		void getData() {               //implicitely virtual comes here .......
+		virtual void getData() {               //implicitely virtual comes here .......
 			
 			std::cout << "Child1 getData" << std::endl;
 		}
@@ -36,7 +36,7 @@ class Child2 : public Child1 {
 			std::cout << "Child2 Constructor" << std::endl;
 		}
 
-		void getData() {               //implicitely virtual comes here .......
+		virtual void getData() {               //implicitely virtual comes here .......
 			
 			std::cout << "Child2 getData" << std::endl;
 		}
