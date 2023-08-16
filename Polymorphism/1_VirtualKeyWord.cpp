@@ -14,23 +14,37 @@ class Parent {
 		}
 };
 
-class Child : public Parent {
+class Child1 : public Parent {
 
 	public:
-		Child() {
+		Child1() {
 			
-			std::cout << "Child Constructor" << std::endl;
+			std::cout << "Child1 Constructor" << std::endl;
 		}
 
 		void getData() {               //implicitely virtual comes here .......
 			
-			std::cout << "Child getData" << std::endl;
+			std::cout << "Child1 getData" << std::endl;
+		}
+};
+
+class Child2 : public Child1 {
+	
+	public:
+		Child2() {
+			
+			std::cout << "Child2 Constructor" << std::endl;
+		}
+
+		void getData() {               //implicitely virtual comes here .......
+			
+			std::cout << "Child2 getData" << std::endl;
 		}
 };
 
 int main() {
 
-	Parent *obj = new Child();
+	Parent *obj = new Child2();
 	obj->getData();
 
 	return 0;
