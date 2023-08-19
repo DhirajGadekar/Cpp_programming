@@ -14,6 +14,7 @@ void mul(int x, int y) {
 
 	std::cout << x * y << std::endl;
 }
+
 int main() {
 	
 	std::cout << "1.Add" << std::endl;
