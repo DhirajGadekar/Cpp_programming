@@ -31,6 +31,5 @@ int main() {
 	
 	Parent *obj = new Child();
 	obj->fun1();
-
 	return 0;
 }
